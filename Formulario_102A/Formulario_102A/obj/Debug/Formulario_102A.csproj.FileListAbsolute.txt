@@ -1,0 +1,9 @@
+C:\Users\a\Documents\Formulario_102A\Formulario_102A\bin\Debug\Formulario_102A.exe.config
+C:\Users\a\Documents\Formulario_102A\Formulario_102A\bin\Debug\Formulario_102A.exe
+C:\Users\a\Documents\Formulario_102A\Formulario_102A\bin\Debug\Formulario_102A.pdb
+C:\Users\a\Documents\Formulario_102A\Formulario_102A\obj\Debug\Formulario_102A.csprojAssemblyReference.cache
+C:\Users\a\Documents\Formulario_102A\Formulario_102A\obj\Debug\Formulario_102A.Form1.resources
+C:\Users\a\Documents\Formulario_102A\Formulario_102A\obj\Debug\Formulario_102A.Properties.Resources.resources
+C:\Users\a\Documents\Formulario_102A\Formulario_102A\obj\Debug\Formulario_102A.csproj.GenerateResource.cache
+C:\Users\a\Documents\Formulario_102A\Formulario_102A\obj\Debug\Formulario_102A.exe
+C:\Users\a\Documents\Formulario_102A\Formulario_102A\obj\Debug\Formulario_102A.pdb

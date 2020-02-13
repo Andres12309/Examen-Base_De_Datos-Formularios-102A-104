@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Formulario_102AModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="formulario_102A">
+          <Key>
+            <PropertyRef Name="id_Formulario" />
+          </Key>
+          <Property Name="id_Formulario" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="id_Usuario" Type="int" />
+          <Property Name="periodo" Type="varchar" MaxLength="50" />
+          <Property Name="NoEmpleados" Type="int" />
+          <Property Name="i481" Type="int" />
+          <Property Name="i718" Type="int" />
+          <Property Name="i729" Type="int" />
+          <Property Name="i741" Type="int" />
+          <Property Name="g491" Type="int" />
+          <Property Name="g739" Type="int" />
+          <Property Name="g751" Type="int" />
+          <Property Name="r749" Type="int" />
+          <Property Name="r759" Type="int" />
+          <Property Name="r769" Type="int" />
+          <Property Name="b740" Type="varchar" MaxLength="25" />
+          <Property Name="p768" Type="int" />
+          <Property Name="p771" Type="int" />
+          <Property Name="p772" Type="int" />
+          <Property Name="p773" Type="int" />
+          <Property Name="p774" Type="int" />
+          <Property Name="p775" Type="int" />
+          <Property Name="p779" Type="int" />
+          <Property Name="p780" Type="int" />
+          <Property Name="c832" Type="int" />
+          <Property Name="c839" Type="int" />
+          <Property Name="c840" Type="int" />
+          <Property Name="c845" Type="int" />
+          <Property Name="c846" Type="int" />
+          <Property Name="c855" Type="int" />
+          <Property Name="c856" Type="int" />
+          <Property Name="c859" Type="int" />
+          <Property Name="c869" Type="int" />
+          <Property Name="c902" Type="int" />
+          <Property Name="c903" Type="int" />
+          <Property Name="c904" Type="int" />
+          <Property Name="c999" Type="int" />
+          <Property Name="c905" Type="int" />
+        </EntityType>
+        <EntityType Name="Usuarios">
+          <Key>
+            <PropertyRef Name="id_Usuario" />
+          </Key>
+          <Property Name="id_Usuario" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Ruc_Usuario" Type="varchar" MaxLength="20" />
+        </EntityType>
+        <Association Name="FK__formulari__id_Us__398D8EEE">
+          <End Role="Usuarios" Type="Self.Usuarios" Multiplicity="0..1" />
+          <End Role="formulario_102A" Type="Self.formulario_102A" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuarios">
+              <PropertyRef Name="id_Usuario" />
+            </Principal>
+            <Dependent Role="formulario_102A">
+              <PropertyRef Name="id_Usuario" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="Formulario_102AModelStoreContainer">
+          <EntitySet Name="formulario_102A" EntityType="Self.formulario_102A" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Usuarios" EntityType="Self.Usuarios" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__formulari__id_Us__398D8EEE" Association="Self.FK__formulari__id_Us__398D8EEE">
+            <End Role="Usuarios" EntitySet="Usuarios" />
+            <End Role="formulario_102A" EntitySet="formulario_102A" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Formulario_102AModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="formulario_102A">
+          <Key>
+            <PropertyRef Name="id_Formulario" />
+          </Key>
+          <Property Name="id_Formulario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="id_Usuario" Type="Int32" />
+          <Property Name="periodo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="NoEmpleados" Type="Int32" />
+          <Property Name="i481" Type="Int32" />
+          <Property Name="i718" Type="Int32" />
+          <Property Name="i729" Type="Int32" />
+          <Property Name="i741" Type="Int32" />
+          <Property Name="g491" Type="Int32" />
+          <Property Name="g739" Type="Int32" />
+          <Property Name="g751" Type="Int32" />
+          <Property Name="r749" Type="Int32" />
+          <Property Name="r759" Type="Int32" />
+          <Property Name="r769" Type="Int32" />
+          <Property Name="b740" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+          <Property Name="p768" Type="Int32" />
+          <Property Name="p771" Type="Int32" />
+          <Property Name="p772" Type="Int32" />
+          <Property Name="p773" Type="Int32" />
+          <Property Name="p774" Type="Int32" />
+          <Property Name="p775" Type="Int32" />
+          <Property Name="p779" Type="Int32" />
+          <Property Name="p780" Type="Int32" />
+          <Property Name="c832" Type="Int32" />
+          <Property Name="c839" Type="Int32" />
+          <Property Name="c840" Type="Int32" />
+          <Property Name="c845" Type="Int32" />
+          <Property Name="c846" Type="Int32" />
+          <Property Name="c855" Type="Int32" />
+          <Property Name="c856" Type="Int32" />
+          <Property Name="c859" Type="Int32" />
+          <Property Name="c869" Type="Int32" />
+          <Property Name="c902" Type="Int32" />
+          <Property Name="c903" Type="Int32" />
+          <Property Name="c904" Type="Int32" />
+          <Property Name="c999" Type="Int32" />
+          <Property Name="c905" Type="Int32" />
+          <NavigationProperty Name="Usuarios" Relationship="Self.FK__formulari__id_Us__398D8EEE" FromRole="formulario_102A" ToRole="Usuarios" />
+        </EntityType>
+        <EntityType Name="Usuarios">
+          <Key>
+            <PropertyRef Name="id_Usuario" />
+          </Key>
+          <Property Name="id_Usuario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Ruc_Usuario" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="formulario_102A" Relationship="Self.FK__formulari__id_Us__398D8EEE" FromRole="Usuarios" ToRole="formulario_102A" />
+        </EntityType>
+        <Association Name="FK__formulari__id_Us__398D8EEE">
+          <End Role="Usuarios" Type="Self.Usuarios" Multiplicity="0..1" />
+          <End Role="formulario_102A" Type="Self.formulario_102A" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuarios">
+              <PropertyRef Name="id_Usuario" />
+            </Principal>
+            <Dependent Role="formulario_102A">
+              <PropertyRef Name="id_Usuario" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="Formulario_102AEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="formulario_102A" EntityType="Self.formulario_102A" />
+          <EntitySet Name="Usuarios" EntityType="Self.Usuarios" />
+          <AssociationSet Name="FK__formulari__id_Us__398D8EEE" Association="Self.FK__formulari__id_Us__398D8EEE">
+            <End Role="Usuarios" EntitySet="Usuarios" />
+            <End Role="formulario_102A" EntitySet="formulario_102A" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Formulario_102AModelStoreContainer" CdmEntityContainer="Formulario_102AEntities">
+          <EntitySetMapping Name="formulario_102A">
+            <EntityTypeMapping TypeName="Formulario_102AModel.formulario_102A">
+              <MappingFragment StoreEntitySet="formulario_102A">
+                <ScalarProperty Name="id_Formulario" ColumnName="id_Formulario" />
+                <ScalarProperty Name="id_Usuario" ColumnName="id_Usuario" />
+                <ScalarProperty Name="periodo" ColumnName="periodo" />
+                <ScalarProperty Name="NoEmpleados" ColumnName="NoEmpleados" />
+                <ScalarProperty Name="i481" ColumnName="i481" />
+                <ScalarProperty Name="i718" ColumnName="i718" />
+                <ScalarProperty Name="i729" ColumnName="i729" />
+                <ScalarProperty Name="i741" ColumnName="i741" />
+                <ScalarProperty Name="g491" ColumnName="g491" />
+                <ScalarProperty Name="g739" ColumnName="g739" />
+                <ScalarProperty Name="g751" ColumnName="g751" />
+                <ScalarProperty Name="r749" ColumnName="r749" />
+                <ScalarProperty Name="r759" ColumnName="r759" />
+                <ScalarProperty Name="r769" ColumnName="r769" />
+                <ScalarProperty Name="b740" ColumnName="b740" />
+                <ScalarProperty Name="p768" ColumnName="p768" />
+                <ScalarProperty Name="p771" ColumnName="p771" />
+                <ScalarProperty Name="p772" ColumnName="p772" />
+                <ScalarProperty Name="p773" ColumnName="p773" />
+                <ScalarProperty Name="p774" ColumnName="p774" />
+                <ScalarProperty Name="p775" ColumnName="p775" />
+                <ScalarProperty Name="p779" ColumnName="p779" />
+                <ScalarProperty Name="p780" ColumnName="p780" />
+                <ScalarProperty Name="c832" ColumnName="c832" />
+                <ScalarProperty Name="c839" ColumnName="c839" />
+                <ScalarProperty Name="c840" ColumnName="c840" />
+                <ScalarProperty Name="c845" ColumnName="c845" />
+                <ScalarProperty Name="c846" ColumnName="c846" />
+                <ScalarProperty Name="c855" ColumnName="c855" />
+                <ScalarProperty Name="c856" ColumnName="c856" />
+                <ScalarProperty Name="c859" ColumnName="c859" />
+                <ScalarProperty Name="c869" ColumnName="c869" />
+                <ScalarProperty Name="c902" ColumnName="c902" />
+                <ScalarProperty Name="c903" ColumnName="c903" />
+                <ScalarProperty Name="c904" ColumnName="c904" />
+                <ScalarProperty Name="c999" ColumnName="c999" />
+                <ScalarProperty Name="c905" ColumnName="c905" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Usuarios">
+            <EntityTypeMapping TypeName="Formulario_102AModel.Usuarios">
+              <MappingFragment StoreEntitySet="Usuarios">
+                <ScalarProperty Name="id_Usuario" ColumnName="id_Usuario" />
+                <ScalarProperty Name="Ruc_Usuario" ColumnName="Ruc_Usuario" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

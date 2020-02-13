@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Formulario_102AModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="formulario_102A">
+    <Key>
+      <PropertyRef Name="id_Formulario" />
+    </Key>
+    <Property Name="id_Formulario" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_Usuario" Type="int" />
+    <Property Name="periodo" Type="varchar" MaxLength="50" />
+    <Property Name="NoEmpleados" Type="int" />
+    <Property Name="i481" Type="int" />
+    <Property Name="i718" Type="int" />
+    <Property Name="i729" Type="int" />
+    <Property Name="i741" Type="int" />
+    <Property Name="g491" Type="int" />
+    <Property Name="g739" Type="int" />
+    <Property Name="g751" Type="int" />
+    <Property Name="r749" Type="int" />
+    <Property Name="r759" Type="int" />
+    <Property Name="r769" Type="int" />
+    <Property Name="b740" Type="varchar" MaxLength="25" />
+    <Property Name="p768" Type="int" />
+    <Property Name="p771" Type="int" />
+    <Property Name="p772" Type="int" />
+    <Property Name="p773" Type="int" />
+    <Property Name="p774" Type="int" />
+    <Property Name="p775" Type="int" />
+    <Property Name="p779" Type="int" />
+    <Property Name="p780" Type="int" />
+    <Property Name="c832" Type="int" />
+    <Property Name="c839" Type="int" />
+    <Property Name="c840" Type="int" />
+    <Property Name="c845" Type="int" />
+    <Property Name="c846" Type="int" />
+    <Property Name="c855" Type="int" />
+    <Property Name="c856" Type="int" />
+    <Property Name="c859" Type="int" />
+    <Property Name="c869" Type="int" />
+    <Property Name="c902" Type="int" />
+    <Property Name="c903" Type="int" />
+    <Property Name="c904" Type="int" />
+    <Property Name="c999" Type="int" />
+    <Property Name="c905" Type="int" />
+  </EntityType>
+  <EntityType Name="Usuarios">
+    <Key>
+      <PropertyRef Name="id_Usuario" />
+    </Key>
+    <Property Name="id_Usuario" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Ruc_Usuario" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <Association Name="FK__formulari__id_Us__398D8EEE">
+    <End Role="Usuarios" Type="Self.Usuarios" Multiplicity="0..1" />
+    <End Role="formulario_102A" Type="Self.formulario_102A" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuarios">
+        <PropertyRef Name="id_Usuario" />
+      </Principal>
+      <Dependent Role="formulario_102A">
+        <PropertyRef Name="id_Usuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Formulario_102AModelStoreContainer">
+    <EntitySet Name="formulario_102A" EntityType="Self.formulario_102A" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Usuarios" EntityType="Self.Usuarios" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__formulari__id_Us__398D8EEE" Association="Self.FK__formulari__id_Us__398D8EEE">
+      <End Role="Usuarios" EntitySet="Usuarios" />
+      <End Role="formulario_102A" EntitySet="formulario_102A" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

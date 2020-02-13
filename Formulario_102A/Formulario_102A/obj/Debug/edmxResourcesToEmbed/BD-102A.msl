@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Formulario_102AModelStoreContainer" CdmEntityContainer="Formulario_102AEntities">
+    <EntitySetMapping Name="formulario_102A">
+      <EntityTypeMapping TypeName="Formulario_102AModel.formulario_102A">
+        <MappingFragment StoreEntitySet="formulario_102A">
+          <ScalarProperty Name="id_Formulario" ColumnName="id_Formulario" />
+          <ScalarProperty Name="id_Usuario" ColumnName="id_Usuario" />
+          <ScalarProperty Name="periodo" ColumnName="periodo" />
+          <ScalarProperty Name="NoEmpleados" ColumnName="NoEmpleados" />
+          <ScalarProperty Name="i481" ColumnName="i481" />
+          <ScalarProperty Name="i718" ColumnName="i718" />
+          <ScalarProperty Name="i729" ColumnName="i729" />
+          <ScalarProperty Name="i741" ColumnName="i741" />
+          <ScalarProperty Name="g491" ColumnName="g491" />
+          <ScalarProperty Name="g739" ColumnName="g739" />
+          <ScalarProperty Name="g751" ColumnName="g751" />
+          <ScalarProperty Name="r749" ColumnName="r749" />
+          <ScalarProperty Name="r759" ColumnName="r759" />
+          <ScalarProperty Name="r769" ColumnName="r769" />
+          <ScalarProperty Name="b740" ColumnName="b740" />
+          <ScalarProperty Name="p768" ColumnName="p768" />
+          <ScalarProperty Name="p771" ColumnName="p771" />
+          <ScalarProperty Name="p772" ColumnName="p772" />
+          <ScalarProperty Name="p773" ColumnName="p773" />
+          <ScalarProperty Name="p774" ColumnName="p774" />
+          <ScalarProperty Name="p775" ColumnName="p775" />
+          <ScalarProperty Name="p779" ColumnName="p779" />
+          <ScalarProperty Name="p780" ColumnName="p780" />
+          <ScalarProperty Name="c832" ColumnName="c832" />
+          <ScalarProperty Name="c839" ColumnName="c839" />
+          <ScalarProperty Name="c840" ColumnName="c840" />
+          <ScalarProperty Name="c845" ColumnName="c845" />
+          <ScalarProperty Name="c846" ColumnName="c846" />
+          <ScalarProperty Name="c855" ColumnName="c855" />
+          <ScalarProperty Name="c856" ColumnName="c856" />
+          <ScalarProperty Name="c859" ColumnName="c859" />
+          <ScalarProperty Name="c869" ColumnName="c869" />
+          <ScalarProperty Name="c902" ColumnName="c902" />
+          <ScalarProperty Name="c903" ColumnName="c903" />
+          <ScalarProperty Name="c904" ColumnName="c904" />
+          <ScalarProperty Name="c999" ColumnName="c999" />
+          <ScalarProperty Name="c905" ColumnName="c905" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Usuarios">
+      <EntityTypeMapping TypeName="Formulario_102AModel.Usuarios">
+        <MappingFragment StoreEntitySet="Usuarios">
+          <ScalarProperty Name="id_Usuario" ColumnName="id_Usuario" />
+          <ScalarProperty Name="Ruc_Usuario" ColumnName="Ruc_Usuario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -34,6 +34,7 @@
             this.BtnAtras = new System.Windows.Forms.Button();
             this.BtnEditarInfo3 = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.BtnAceptar3 = new System.Windows.Forms.Button();
             this.Txt869 = new System.Windows.Forms.TextBox();
             this.Txt859 = new System.Windows.Forms.TextBox();
             this.Txt856 = new System.Windows.Forms.TextBox();
@@ -73,6 +74,7 @@
             this.label89 = new System.Windows.Forms.Label();
             this.BtnEditarInfo2 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.BtnAceptar2 = new System.Windows.Forms.Button();
             this.Txt779 = new System.Windows.Forms.TextBox();
             this.Txt780 = new System.Windows.Forms.TextBox();
             this.Txt775 = new System.Windows.Forms.TextBox();
@@ -118,6 +120,7 @@
             this.label30 = new System.Windows.Forms.Label();
             this.BtnEditarInfo1 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.BtnAceptar1 = new System.Windows.Forms.Button();
             this.Txt769 = new System.Windows.Forms.TextBox();
             this.Txt759 = new System.Windows.Forms.TextBox();
             this.Txt749 = new System.Windows.Forms.TextBox();
@@ -172,9 +175,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.BtnAceptar2 = new System.Windows.Forms.Button();
-            this.BtnAceptar1 = new System.Windows.Forms.Button();
-            this.BtnAceptar3 = new System.Windows.Forms.Button();
+            this.LblId_user = new System.Windows.Forms.Label();
             this.PnlDatosIngresados.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -213,7 +214,7 @@
             // 
             // TxtNoEmpleados
             // 
-            this.TxtNoEmpleados.Location = new System.Drawing.Point(370, 167);
+            this.TxtNoEmpleados.Location = new System.Drawing.Point(370, 174);
             this.TxtNoEmpleados.Name = "TxtNoEmpleados";
             this.TxtNoEmpleados.Size = new System.Drawing.Size(27, 20);
             this.TxtNoEmpleados.TabIndex = 22;
@@ -308,6 +309,20 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1001, 328);
             this.panel4.TabIndex = 15;
+            // 
+            // BtnAceptar3
+            // 
+            this.BtnAceptar3.BackColor = System.Drawing.Color.DodgerBlue;
+            this.BtnAceptar3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnAceptar3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnAceptar3.ForeColor = System.Drawing.Color.White;
+            this.BtnAceptar3.Location = new System.Drawing.Point(480, 299);
+            this.BtnAceptar3.Name = "BtnAceptar3";
+            this.BtnAceptar3.Size = new System.Drawing.Size(94, 29);
+            this.BtnAceptar3.TabIndex = 86;
+            this.BtnAceptar3.Text = "Guardar";
+            this.BtnAceptar3.UseVisualStyleBackColor = false;
+            this.BtnAceptar3.Click += new System.EventHandler(this.BtnAceptar3_Click);
             // 
             // Txt869
             // 
@@ -798,6 +813,20 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1001, 302);
             this.panel1.TabIndex = 13;
+            // 
+            // BtnAceptar2
+            // 
+            this.BtnAceptar2.BackColor = System.Drawing.Color.DodgerBlue;
+            this.BtnAceptar2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnAceptar2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnAceptar2.ForeColor = System.Drawing.Color.White;
+            this.BtnAceptar2.Location = new System.Drawing.Point(898, 270);
+            this.BtnAceptar2.Name = "BtnAceptar2";
+            this.BtnAceptar2.Size = new System.Drawing.Size(94, 30);
+            this.BtnAceptar2.TabIndex = 73;
+            this.BtnAceptar2.Text = "Guardar";
+            this.BtnAceptar2.UseVisualStyleBackColor = false;
+            this.BtnAceptar2.Click += new System.EventHandler(this.BtnAceptar2_Click);
             // 
             // Txt779
             // 
@@ -1304,6 +1333,7 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.Orange;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Controls.Add(this.LblId_user);
             this.panel3.Controls.Add(this.BtnAceptar1);
             this.panel3.Controls.Add(this.Txt769);
             this.panel3.Controls.Add(this.Txt759);
@@ -1353,6 +1383,20 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1001, 251);
             this.panel3.TabIndex = 11;
+            // 
+            // BtnAceptar1
+            // 
+            this.BtnAceptar1.BackColor = System.Drawing.Color.DodgerBlue;
+            this.BtnAceptar1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnAceptar1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnAceptar1.ForeColor = System.Drawing.Color.White;
+            this.BtnAceptar1.Location = new System.Drawing.Point(482, 220);
+            this.BtnAceptar1.Name = "BtnAceptar1";
+            this.BtnAceptar1.Size = new System.Drawing.Size(85, 29);
+            this.BtnAceptar1.TabIndex = 60;
+            this.BtnAceptar1.Text = "Guardar";
+            this.BtnAceptar1.UseVisualStyleBackColor = false;
+            this.BtnAceptar1.Click += new System.EventHandler(this.BtnAceptar1_Click_1);
             // 
             // Txt769
             // 
@@ -1954,47 +1998,15 @@
             this.label1.Text = "Declaracón de impuestos - Formulario simplificado";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // BtnAceptar2
+            // LblId_user
             // 
-            this.BtnAceptar2.BackColor = System.Drawing.Color.DodgerBlue;
-            this.BtnAceptar2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnAceptar2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnAceptar2.ForeColor = System.Drawing.Color.White;
-            this.BtnAceptar2.Location = new System.Drawing.Point(898, 270);
-            this.BtnAceptar2.Name = "BtnAceptar2";
-            this.BtnAceptar2.Size = new System.Drawing.Size(94, 30);
-            this.BtnAceptar2.TabIndex = 73;
-            this.BtnAceptar2.Text = "Guardar";
-            this.BtnAceptar2.UseVisualStyleBackColor = false;
-            this.BtnAceptar2.Click += new System.EventHandler(this.BtnAceptar2_Click);
-            // 
-            // BtnAceptar1
-            // 
-            this.BtnAceptar1.BackColor = System.Drawing.Color.DodgerBlue;
-            this.BtnAceptar1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnAceptar1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnAceptar1.ForeColor = System.Drawing.Color.White;
-            this.BtnAceptar1.Location = new System.Drawing.Point(482, 220);
-            this.BtnAceptar1.Name = "BtnAceptar1";
-            this.BtnAceptar1.Size = new System.Drawing.Size(85, 29);
-            this.BtnAceptar1.TabIndex = 60;
-            this.BtnAceptar1.Text = "Guardar";
-            this.BtnAceptar1.UseVisualStyleBackColor = false;
-            this.BtnAceptar1.Click += new System.EventHandler(this.BtnAceptar1_Click_1);
-            // 
-            // BtnAceptar3
-            // 
-            this.BtnAceptar3.BackColor = System.Drawing.Color.DodgerBlue;
-            this.BtnAceptar3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnAceptar3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnAceptar3.ForeColor = System.Drawing.Color.White;
-            this.BtnAceptar3.Location = new System.Drawing.Point(480, 299);
-            this.BtnAceptar3.Name = "BtnAceptar3";
-            this.BtnAceptar3.Size = new System.Drawing.Size(94, 29);
-            this.BtnAceptar3.TabIndex = 86;
-            this.BtnAceptar3.Text = "Guardar";
-            this.BtnAceptar3.UseVisualStyleBackColor = false;
-            this.BtnAceptar3.Click += new System.EventHandler(this.BtnAceptar3_Click);
+            this.LblId_user.AutoSize = true;
+            this.LblId_user.Location = new System.Drawing.Point(5, 0);
+            this.LblId_user.Name = "LblId_user";
+            this.LblId_user.Size = new System.Drawing.Size(13, 13);
+            this.LblId_user.TabIndex = 23;
+            this.LblId_user.Text = "0";
+            this.LblId_user.Visible = false;
             // 
             // Form1
             // 
@@ -2064,7 +2076,6 @@
         private System.Windows.Forms.Label Lbl751;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Label Lbl769;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button BtnEditarInfo1;
         private System.Windows.Forms.Button BtnEditarInfo2;
         private System.Windows.Forms.Panel panel1;
@@ -2166,6 +2177,7 @@
         private System.Windows.Forms.Button BtnAceptar2;
         private System.Windows.Forms.Button BtnAceptar1;
         private System.Windows.Forms.Button BtnAceptar3;
+        private System.Windows.Forms.Label LblId_user;
     }
 }
 

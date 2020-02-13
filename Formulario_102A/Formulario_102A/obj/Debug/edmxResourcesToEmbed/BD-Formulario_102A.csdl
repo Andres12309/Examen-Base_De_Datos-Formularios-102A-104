@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Formulario_102AModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="formulario_102A">
+    <Key>
+      <PropertyRef Name="id_Formulario" />
+    </Key>
+    <Property Name="id_Formulario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_Usuario" Type="Int32" />
+    <Property Name="periodo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="NoEmpleados" Type="Int32" />
+    <Property Name="i481" Type="Int32" />
+    <Property Name="i718" Type="Int32" />
+    <Property Name="i729" Type="Int32" />
+    <Property Name="i741" Type="Int32" />
+    <Property Name="g491" Type="Int32" />
+    <Property Name="g739" Type="Int32" />
+    <Property Name="g751" Type="Int32" />
+    <Property Name="r749" Type="Int32" />
+    <Property Name="r759" Type="Int32" />
+    <Property Name="r769" Type="Int32" />
+    <Property Name="b740" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="p768" Type="Int32" />
+    <Property Name="p771" Type="Int32" />
+    <Property Name="p772" Type="Int32" />
+    <Property Name="p773" Type="Int32" />
+    <Property Name="p774" Type="Int32" />
+    <Property Name="p775" Type="Int32" />
+    <Property Name="p779" Type="Int32" />
+    <Property Name="p780" Type="Int32" />
+    <Property Name="c832" Type="Int32" />
+    <Property Name="c839" Type="Double" />
+    <Property Name="c840" Type="Int32" />
+    <Property Name="c845" Type="Int32" />
+    <Property Name="c846" Type="Int32" />
+    <Property Name="c855" Type="Double" />
+    <Property Name="c856" Type="Double" />
+    <Property Name="c859" Type="Double" />
+    <Property Name="c869" Type="Double" />
+    <NavigationProperty Name="Usuarios" Relationship="Self.FK__formulari__id_Us__398D8EEE" FromRole="formulario_102A" ToRole="Usuarios" />
+  </EntityType>
+  <EntityType Name="Usuarios">
+    <Key>
+      <PropertyRef Name="id_Usuario" />
+    </Key>
+    <Property Name="id_Usuario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Ruc_Usuario" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="formulario_102A" Relationship="Self.FK__formulari__id_Us__398D8EEE" FromRole="Usuarios" ToRole="formulario_102A" />
+  </EntityType>
+  <Association Name="FK__formulari__id_Us__398D8EEE">
+    <End Role="Usuarios" Type="Self.Usuarios" Multiplicity="0..1" />
+    <End Role="formulario_102A" Type="Self.formulario_102A" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuarios">
+        <PropertyRef Name="id_Usuario" />
+      </Principal>
+      <Dependent Role="formulario_102A">
+        <PropertyRef Name="id_Usuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Formulario_102AEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="formulario_102A" EntityType="Self.formulario_102A" />
+    <EntitySet Name="Usuarios" EntityType="Self.Usuarios" />
+    <AssociationSet Name="FK__formulari__id_Us__398D8EEE" Association="Self.FK__formulari__id_Us__398D8EEE">
+      <End Role="Usuarios" EntitySet="Usuarios" />
+      <End Role="formulario_102A" EntitySet="formulario_102A" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

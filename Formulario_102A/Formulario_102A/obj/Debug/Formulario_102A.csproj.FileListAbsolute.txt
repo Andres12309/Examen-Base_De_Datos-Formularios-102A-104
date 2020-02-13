@@ -24,3 +24,4 @@ C:\Users\a\Documents\Examen-Base_De_Datos-Formularios-102A-104\Formulario_102A\F
 C:\Users\a\Documents\Examen-Base_De_Datos-Formularios-102A-104\Formulario_102A\Formulario_102A\obj\Debug\Formulario_102A.csproj.CopyComplete
 C:\Users\a\Documents\Examen-Base_De_Datos-Formularios-102A-104\Formulario_102A\Formulario_102A\obj\Debug\Formulario_102A.exe
 C:\Users\a\Documents\Examen-Base_De_Datos-Formularios-102A-104\Formulario_102A\Formulario_102A\obj\Debug\Formulario_102A.pdb
+C:\Users\a\Documents\Examen-Base_De_Datos-Formularios-102A-104\Formulario_102A\Formulario_102A\obj\Debug\Formulario_102A.Usuario_102A.resources

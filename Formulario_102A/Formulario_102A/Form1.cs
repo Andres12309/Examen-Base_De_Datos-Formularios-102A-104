@@ -15,61 +15,72 @@ namespace Formulario_102A
     {
         formulario_102A nRegistro = null;
         public int? id = null;
-        public Form1()
+        public Form1(string ruc, string periodo, int id_user)
         {
             InitializeComponent();
             BtnAceptar1.Visible = false;
             BtnAceptar2.Visible = false;
             BtnAceptar3.Visible = false;
             TxtNoEmpleados.Visible = false;
-            //int? id = GetId();
+
             if (id != null)
             {
                 cargarDatos(id);
-                //Refrescar();
             }
-            
+            LblId_user.Text = id_user.ToString();
+            LblAño.Text = periodo;
+
         }
 
         private void cargarDatos(int? id)
         {
             using (Formulario_102AEntities db = new Formulario_102AEntities())
             {
-                nRegistro = db.formulario_102A.Find(id);
-                if (id == null)
+                if (id != null)
                 {
                     nRegistro = new formulario_102A();
                 }
-                LblAño.Text = nRegistro.periodo;
-                LblNoEmpleados.Text = Convert.ToString(nRegistro.NoEmpleados);
-                Lbl481.Text = Convert.ToString(nRegistro.i481);
-                Lbl491.Text = Convert.ToString(nRegistro.g491);
-                Lbl718.Text = Convert.ToString(nRegistro.i718);
-                Lbl729.Text = Convert.ToString(nRegistro.i729);
-                Lbl739.Text = Convert.ToString(nRegistro.g739);
-                Lbl741.Text = Convert.ToString(nRegistro.i741);
-                Lbl749.Text = Convert.ToString(nRegistro.r749);
-                Lbl751.Text = Convert.ToString(nRegistro.g751);
-                Lbl759.Text = Convert.ToString(nRegistro.r759);
-                Lbl768.Text = Convert.ToString(nRegistro.p768);
-                Lbl769.Text = Convert.ToString(nRegistro.r769);
-                Lbl771.Text = Convert.ToString(nRegistro.p771);
-                Lbl772.Text = Convert.ToString(nRegistro.p772);
-                Lbl773.Text = Convert.ToString(nRegistro.p773);
-                Lbl774.Text = Convert.ToString(nRegistro.p774);
-                Lbl775.Text = Convert.ToString(nRegistro.p775);
-                Lbl779.Text = Convert.ToString(nRegistro.p779);
-                Lbl780.Text = Convert.ToString(nRegistro.p780);
-                CmbTipoBeneficiario.Text = nRegistro.b740;
-                Lbl832.Text = Convert.ToString(nRegistro.c832);
-                Lbl839.Text = Convert.ToString(nRegistro.c839);
-                Lbl840.Text = Convert.ToString(nRegistro.c840);
-                Lbl845.Text = Convert.ToString(nRegistro.c845);
-                Lbl846.Text = Convert.ToString(nRegistro.c846);
-                Lbl855.Text = Convert.ToString(nRegistro.c855);
-                Lbl856.Text = Convert.ToString(nRegistro.c856);
-                Lbl859.Text = Convert.ToString(nRegistro.c859);
-                Lbl869.Text = Convert.ToString(nRegistro.c869);
+                var list = from d in db.formulario_102A
+                           where d.id_Usuario == Convert.ToInt32(LblId_user.Text) && d.periodo == LblAño.Text
+                           select d;
+                if (list.Count() > 0)
+                {
+                    LblAño.Text = nRegistro.periodo;
+                    LblNoEmpleados.Text = Convert.ToString(nRegistro.NoEmpleados);
+                    Lbl481.Text = Convert.ToString(nRegistro.i481);
+                    Lbl491.Text = Convert.ToString(nRegistro.g491);
+                    Lbl718.Text = Convert.ToString(nRegistro.i718);
+                    Lbl729.Text = Convert.ToString(nRegistro.i729);
+                    Lbl739.Text = Convert.ToString(nRegistro.g739);
+                    Lbl741.Text = Convert.ToString(nRegistro.i741);
+                    Lbl749.Text = Convert.ToString(nRegistro.r749);
+                    Lbl751.Text = Convert.ToString(nRegistro.g751);
+                    Lbl759.Text = Convert.ToString(nRegistro.r759);
+                    Lbl768.Text = Convert.ToString(nRegistro.p768);
+                    Lbl769.Text = Convert.ToString(nRegistro.r769);
+                    Lbl771.Text = Convert.ToString(nRegistro.p771);
+                    Lbl772.Text = Convert.ToString(nRegistro.p772);
+                    Lbl773.Text = Convert.ToString(nRegistro.p773);
+                    Lbl774.Text = Convert.ToString(nRegistro.p774);
+                    Lbl775.Text = Convert.ToString(nRegistro.p775);
+                    Lbl779.Text = Convert.ToString(nRegistro.p779);
+                    Lbl780.Text = Convert.ToString(nRegistro.p780);
+                    CmbTipoBeneficiario.Text = nRegistro.b740;
+                    Lbl832.Text = Convert.ToString(nRegistro.c832);
+                    Lbl839.Text = Convert.ToString(nRegistro.c839);
+                    Lbl840.Text = Convert.ToString(nRegistro.c840);
+                    Lbl845.Text = Convert.ToString(nRegistro.c845);
+                    Lbl846.Text = Convert.ToString(nRegistro.c846);
+                    Lbl855.Text = Convert.ToString(nRegistro.c855);
+                    Lbl856.Text = Convert.ToString(nRegistro.c856);
+                    Lbl859.Text = Convert.ToString(nRegistro.c859);
+                    Lbl869.Text = Convert.ToString(nRegistro.c869);
+                }
+                else
+                {
+                    MessageBox.Show("Actualizar formulario");
+                }
+
             }
         }
 
@@ -158,6 +169,9 @@ namespace Formulario_102A
                 {
                     nRegistro = new formulario_102A();
                 }
+                
+                nRegistro.periodo = LblAño.Text;
+                nRegistro.NoEmpleados = Convert.ToInt32(LblNoEmpleados.Text);
                 nRegistro.i481 = Convert.ToInt32(Lbl481.Text);
                 nRegistro.g491 = Convert.ToInt32(Lbl491.Text);
                 nRegistro.i718 = Convert.ToInt32(Lbl718.Text);
@@ -168,6 +182,27 @@ namespace Formulario_102A
                 nRegistro.g751 = Convert.ToInt32(Lbl751.Text);
                 nRegistro.r759 = Convert.ToInt32(Lbl759.Text);
                 nRegistro.r769 = Convert.ToInt32(Lbl769.Text);
+
+                nRegistro.p768 = Convert.ToInt32(Lbl768.Text);
+                nRegistro.p771 = Convert.ToInt32(Lbl771.Text);
+                nRegistro.p772 = Convert.ToInt32(Lbl772.Text);
+                nRegistro.p773 = Convert.ToInt32(Lbl773.Text);
+                nRegistro.p774 = Convert.ToInt32(Lbl774.Text);
+                nRegistro.p775 = Convert.ToInt32(Lbl775.Text);
+                nRegistro.p779 = Convert.ToInt32(Lbl779.Text);
+                nRegistro.p780 = Convert.ToInt32(Lbl780.Text);
+                nRegistro.b740 = CmbTipoBeneficiario.Text;
+
+                nRegistro.c832 = Convert.ToInt32(Lbl481.Text);
+                nRegistro.c839 = Convert.ToDouble(Lbl839.Text);
+                nRegistro.c840 = Convert.ToInt32(Lbl840.Text);
+                nRegistro.c845 = Convert.ToInt32(Lbl845.Text);
+                nRegistro.c846 = Convert.ToInt32(Lbl846.Text);
+                nRegistro.c855 = Convert.ToDouble(Lbl855.Text);
+                nRegistro.c856 = Convert.ToDouble(Lbl856.Text);
+                nRegistro.c859 = Convert.ToDouble(Lbl859.Text);
+                nRegistro.c869 = Convert.ToDouble(Lbl869.Text);
+
                 if (id == null)
                 {
                     db.formulario_102A.Add(nRegistro);
@@ -177,7 +212,7 @@ namespace Formulario_102A
                 //db.Entry(nRegistro).State = System.Data.Entity.EntityState.Modified;
 
                 db.SaveChanges();
-
+                MessageBox.Show("Su formulario se registro exitosamente");
             }
         }
         private void BtnEditarInfo2_Click(object sender, EventArgs e)
@@ -382,15 +417,14 @@ namespace Formulario_102A
             if (txt845 > 0)
             {
                 Txt855.Text = txt845.ToString();
+                Txt859.Text = Txt855.Text;
             }
             else
             {
                 Txt855.Text = 0.ToString();
                 Txt856.Text = txt845.ToString();
+                Txt869.Text = Txt856.Text;
             }
-            Txt856.Text = 0.ToString();
-            Txt859.Text = Txt855.Text;
-            Txt869.Text = Txt856.Text;
         }
 
         private void Txt840_TextChanged(object sender, EventArgs e)
@@ -399,15 +433,15 @@ namespace Formulario_102A
             if (txt840 > 0)
             {
                 Txt855.Text = txt840.ToString();
+                Txt859.Text = Txt855.Text;
             }
             else
             {
                 Txt855.Text = 0.ToString();
                 Txt856.Text = txt840.ToString();
+                Txt869.Text = Txt856.Text;
             }
-            Txt856.Text = 0.ToString();
-            Txt859.Text = Txt855.Text;
-            Txt869.Text = Txt856.Text;
+            
         }
 
         private void Txt846_TextChanged(object sender, EventArgs e)
@@ -416,16 +450,14 @@ namespace Formulario_102A
             if (txt846 > 0)
             {
                 Txt855.Text = txt846.ToString();
+                Txt859.Text = Txt855.Text;
             }
             else
             {
                 Txt855.Text = 0.ToString();
                 Txt856.Text = txt846.ToString();
+                Txt869.Text = Txt856.Text;
             }
-            Txt856.Text = 0.ToString();
-
-            Txt859.Text = Txt855.Text;
-            Txt869.Text = Txt856.Text;
         }
     }
 }

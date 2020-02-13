@@ -46,11 +46,6 @@ namespace Formulario_102A
         public Nullable<double> c856 { get; set; }
         public Nullable<double> c859 { get; set; }
         public Nullable<double> c869 { get; set; }
-        public Nullable<int> c902 { get; set; }
-        public Nullable<int> c903 { get; set; }
-        public Nullable<int> c904 { get; set; }
-        public Nullable<int> c999 { get; set; }
-        public Nullable<int> c905 { get; set; }
     
         public virtual Usuarios Usuarios { get; set; }
     }

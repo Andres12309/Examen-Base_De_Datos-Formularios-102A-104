@@ -33,19 +33,14 @@
           <Property Name="p779" Type="int" />
           <Property Name="p780" Type="int" />
           <Property Name="c832" Type="int" />
-          <Property Name="c839" Type="int" />
+          <Property Name="c839" Type="float" />
           <Property Name="c840" Type="int" />
           <Property Name="c845" Type="int" />
           <Property Name="c846" Type="int" />
-          <Property Name="c855" Type="int" />
-          <Property Name="c856" Type="int" />
-          <Property Name="c859" Type="int" />
-          <Property Name="c869" Type="int" />
-          <Property Name="c902" Type="int" />
-          <Property Name="c903" Type="int" />
-          <Property Name="c904" Type="int" />
-          <Property Name="c999" Type="int" />
-          <Property Name="c905" Type="int" />
+          <Property Name="c855" Type="float" />
+          <Property Name="c856" Type="float" />
+          <Property Name="c859" Type="float" />
+          <Property Name="c869" Type="float" />
         </EntityType>
         <EntityType Name="Usuarios">
           <Key>
@@ -107,19 +102,14 @@
           <Property Name="p779" Type="Int32" />
           <Property Name="p780" Type="Int32" />
           <Property Name="c832" Type="Int32" />
-          <Property Name="c839" Type="Int32" />
+          <Property Name="c839" Type="Double" />
           <Property Name="c840" Type="Int32" />
           <Property Name="c845" Type="Int32" />
           <Property Name="c846" Type="Int32" />
-          <Property Name="c855" Type="Int32" />
-          <Property Name="c856" Type="Int32" />
-          <Property Name="c859" Type="Int32" />
-          <Property Name="c869" Type="Int32" />
-          <Property Name="c902" Type="Int32" />
-          <Property Name="c903" Type="Int32" />
-          <Property Name="c904" Type="Int32" />
-          <Property Name="c999" Type="Int32" />
-          <Property Name="c905" Type="Int32" />
+          <Property Name="c855" Type="Double" />
+          <Property Name="c856" Type="Double" />
+          <Property Name="c859" Type="Double" />
+          <Property Name="c869" Type="Double" />
           <NavigationProperty Name="Usuarios" Relationship="Self.FK__formulari__id_Us__398D8EEE" FromRole="formulario_102A" ToRole="Usuarios" />
         </EntityType>
         <EntityType Name="Usuarios">
@@ -191,11 +181,6 @@
                 <ScalarProperty Name="c856" ColumnName="c856" />
                 <ScalarProperty Name="c859" ColumnName="c859" />
                 <ScalarProperty Name="c869" ColumnName="c869" />
-                <ScalarProperty Name="c902" ColumnName="c902" />
-                <ScalarProperty Name="c903" ColumnName="c903" />
-                <ScalarProperty Name="c904" ColumnName="c904" />
-                <ScalarProperty Name="c999" ColumnName="c999" />
-                <ScalarProperty Name="c905" ColumnName="c905" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

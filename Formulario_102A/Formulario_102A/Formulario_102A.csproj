@@ -43,11 +43,42 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.1.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Npgsql, Version=4.1.3.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Npgsql.4.1.3\lib\net461\Npgsql.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.0\lib\netstandard2.0\System.Buffers.dll</HintPath>
+    </Reference>
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.3\lib\netstandard2.0\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.6.0\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
+    <Reference Include="System.Text.Encodings.Web, Version=4.0.4.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encodings.Web.4.6.0\lib\netstandard2.0\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=4.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Json.4.6.0\lib\net461\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.3\lib\netstandard2.0\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -74,14 +105,38 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BD-Formulario_102A.edmx</DependentUpon>
     </Compile>
+    <Compile Include="BD-Formulario_104.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BD-Formulario_104.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD-Formulario_104.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BD-Formulario_104.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD-Formulario_104.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BD-Formulario_104.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
     <Compile Include="formulario_102A.cs">
       <DependentUpon>BD-Formulario_102A.tt</DependentUpon>
+    </Compile>
+    <Compile Include="formulario_104.cs">
+      <DependentUpon>BD-Formulario_104.tt</DependentUpon>
     </Compile>
     <Compile Include="FrmApartado1.cs">
       <SubType>Form</SubType>
@@ -101,6 +156,18 @@
     <Compile Include="FrmApartado3.Designer.cs">
       <DependentUpon>FrmApartado3.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmFormularios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFormularios.Designer.cs">
+      <DependentUpon>FrmFormularios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inicio.Designer.cs">
+      <DependentUpon>Inicio.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Usuario-102A.cs">
@@ -109,11 +176,20 @@
     <Compile Include="Usuario-102A.Designer.cs">
       <DependentUpon>Usuario-102A.cs</DependentUpon>
     </Compile>
+    <Compile Include="Usuario-104.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuario-104.Designer.cs">
+      <DependentUpon>Usuario-104.cs</DependentUpon>
+    </Compile>
     <Compile Include="Usuarios.cs">
       <DependentUpon>BD-Formulario_102A.tt</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmApartado1.resx">
       <DependentUpon>FrmApartado1.cs</DependentUpon>
@@ -124,6 +200,12 @@
     <EmbeddedResource Include="FrmApartado3.resx">
       <DependentUpon>FrmApartado3.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmFormularios.resx">
+      <DependentUpon>FrmFormularios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicio.resx">
+      <DependentUpon>Inicio.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -132,9 +214,13 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Usuario-102A.resx">
       <DependentUpon>Usuario-102A.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuario-104.resx">
+      <DependentUpon>Usuario-104.cs</DependentUpon>
     </EmbeddedResource>
     <EntityDeploy Include="BD-Formulario_102A.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
@@ -142,6 +228,13 @@
     </EntityDeploy>
     <None Include="BD-Formulario_102A.edmx.diagram">
       <DependentUpon>BD-Formulario_102A.edmx</DependentUpon>
+    </None>
+    <EntityDeploy Include="BD-Formulario_104.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>BD-Formulario_104.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="BD-Formulario_104.edmx.diagram">
+      <DependentUpon>BD-Formulario_104.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -161,6 +254,15 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\logoformulario.png" />
+    <None Include="Resources\Login.PNG" />
+    <None Include="Resources\Logo2.jpg" />
+    <None Include="Resources\LogoSRI.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="images\" />
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="BD-Formulario_102A.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>BD-Formulario_102A.edmx</DependentUpon>
@@ -170,6 +272,16 @@
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>BD-Formulario_102A.edmx</DependentUpon>
       <LastGenOutput>BD-Formulario_102A.cs</LastGenOutput>
+    </Content>
+    <Content Include="BD-Formulario_104.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>BD-Formulario_104.edmx</DependentUpon>
+      <LastGenOutput>BD-Formulario_104.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="BD-Formulario_104.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>BD-Formulario_104.edmx</DependentUpon>
+      <LastGenOutput>BD-Formulario_104.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

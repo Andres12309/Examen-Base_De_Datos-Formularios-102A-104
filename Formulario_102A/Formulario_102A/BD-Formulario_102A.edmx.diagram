@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="fcd0dee8e7dc4fb7991d3e190c3c37e3" Name="Diagram1" ZoomLevel="48">
+      <Diagram DiagramId="f02dd22d2d364f8290bf8bae4290e124" Name="Diagram1">
         <EntityTypeShape EntityType="Formulario_102AModel.formulario_102A" Width="1.5" PointX="3" PointY="1.25" IsExpanded="true" />
         <EntityTypeShape EntityType="Formulario_102AModel.Usuarios" Width="1.5" PointX="0.75" PointY="4.125" IsExpanded="true" />
         <AssociationConnector Association="Formulario_102AModel.FK__formulari__id_Us__398D8EEE" ManuallyRouted="false" />

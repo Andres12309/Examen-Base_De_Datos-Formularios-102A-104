@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="formulario_104">
+    <Key>
+      <PropertyRef Name="id_Formulario" />
+    </Key>
+    <Property Name="id_Formulario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Ruc_Usuario" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="periodo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="c401" Type="Double" />
+    <Property Name="c409" Type="Double" />
+    <Property Name="c411" Type="Double" />
+    <Property Name="c419" Type="Double" />
+    <Property Name="c421" Type="Double" />
+    <Property Name="c429" Type="Double" />
+    <Property Name="c499" Type="Double" />
+    <Property Name="r601" Type="Double" />
+    <Property Name="r605" Type="Double" />
+    <Property Name="r608" Type="Double" />
+    <Property Name="r609" Type="Double" />
+    <Property Name="r615" Type="Double" />
+    <Property Name="r620" Type="Double" />
+    <Property Name="r699" Type="Double" />
+  </EntityType>
+  <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="formulario_104" EntityType="Self.formulario_104" />
+  </EntityContainer>
+</Schema>

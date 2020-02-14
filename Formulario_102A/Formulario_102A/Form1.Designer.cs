@@ -120,6 +120,7 @@
             this.label30 = new System.Windows.Forms.Label();
             this.BtnEditarInfo1 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.LblId_user = new System.Windows.Forms.Label();
             this.BtnAceptar1 = new System.Windows.Forms.Button();
             this.Txt769 = new System.Windows.Forms.TextBox();
             this.Txt759 = new System.Windows.Forms.TextBox();
@@ -175,7 +176,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.LblId_user = new System.Windows.Forms.Label();
             this.PnlDatosIngresados.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -247,6 +247,7 @@
             this.BtnAtras.TabIndex = 17;
             this.BtnAtras.Text = "Atrás";
             this.BtnAtras.UseVisualStyleBackColor = false;
+            this.BtnAtras.Click += new System.EventHandler(this.BtnAtras_Click);
             // 
             // BtnEditarInfo3
             // 
@@ -1384,6 +1385,16 @@
             this.panel3.Size = new System.Drawing.Size(1001, 251);
             this.panel3.TabIndex = 11;
             // 
+            // LblId_user
+            // 
+            this.LblId_user.AutoSize = true;
+            this.LblId_user.Location = new System.Drawing.Point(5, 0);
+            this.LblId_user.Name = "LblId_user";
+            this.LblId_user.Size = new System.Drawing.Size(13, 13);
+            this.LblId_user.TabIndex = 23;
+            this.LblId_user.Text = "0";
+            this.LblId_user.Visible = false;
+            // 
             // BtnAceptar1
             // 
             this.BtnAceptar1.BackColor = System.Drawing.Color.DodgerBlue;
@@ -1997,16 +2008,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Declaracón de impuestos - Formulario simplificado";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // LblId_user
-            // 
-            this.LblId_user.AutoSize = true;
-            this.LblId_user.Location = new System.Drawing.Point(5, 0);
-            this.LblId_user.Name = "LblId_user";
-            this.LblId_user.Size = new System.Drawing.Size(13, 13);
-            this.LblId_user.TabIndex = 23;
-            this.LblId_user.Text = "0";
-            this.LblId_user.Visible = false;
             // 
             // Form1
             // 

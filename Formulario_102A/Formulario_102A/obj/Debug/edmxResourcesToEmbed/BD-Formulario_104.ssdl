@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="formulario_104">
+    <Key>
+      <PropertyRef Name="id_Formulario" />
+    </Key>
+    <Property Name="id_Formulario" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Ruc_Usuario" Type="varchar" MaxLength="50" />
+    <Property Name="periodo" Type="varchar" MaxLength="50" />
+    <Property Name="c401" Type="float" />
+    <Property Name="c409" Type="float" />
+    <Property Name="c411" Type="float" />
+    <Property Name="c419" Type="float" />
+    <Property Name="c421" Type="float" />
+    <Property Name="c429" Type="float" />
+    <Property Name="c499" Type="float" />
+    <Property Name="r601" Type="float" />
+    <Property Name="r605" Type="float" />
+    <Property Name="r608" Type="float" />
+    <Property Name="r609" Type="float" />
+    <Property Name="r615" Type="float" />
+    <Property Name="r620" Type="float" />
+    <Property Name="r699" Type="float" />
+  </EntityType>
+  <EntityContainer Name="ModelStoreContainer">
+    <EntitySet Name="formulario_104" EntityType="Self.formulario_104" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

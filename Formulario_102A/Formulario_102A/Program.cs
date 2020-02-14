@@ -16,7 +16,7 @@ namespace Formulario_102A
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Usuario_102A());
+            Application.Run(new Inicio());
         }
     }
 }

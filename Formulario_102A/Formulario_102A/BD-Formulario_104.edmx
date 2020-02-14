@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="formulario_104">
+          <Key>
+            <PropertyRef Name="id_Formulario" />
+          </Key>
+          <Property Name="id_Formulario" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Ruc_Usuario" Type="varchar" MaxLength="50" />
+          <Property Name="periodo" Type="varchar" MaxLength="50" />
+          <Property Name="c401" Type="float" />
+          <Property Name="c409" Type="float" />
+          <Property Name="c411" Type="float" />
+          <Property Name="c419" Type="float" />
+          <Property Name="c421" Type="float" />
+          <Property Name="c429" Type="float" />
+          <Property Name="c499" Type="float" />
+          <Property Name="r601" Type="float" />
+          <Property Name="r605" Type="float" />
+          <Property Name="r608" Type="float" />
+          <Property Name="r609" Type="float" />
+          <Property Name="r615" Type="float" />
+          <Property Name="r620" Type="float" />
+          <Property Name="r699" Type="float" />
+        </EntityType>
+        <EntityContainer Name="ModelStoreContainer">
+          <EntitySet Name="formulario_104" EntityType="Self.formulario_104" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="formulario_104">
+          <Key>
+            <PropertyRef Name="id_Formulario" />
+          </Key>
+          <Property Name="id_Formulario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Ruc_Usuario" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="periodo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="c401" Type="Double" />
+          <Property Name="c409" Type="Double" />
+          <Property Name="c411" Type="Double" />
+          <Property Name="c419" Type="Double" />
+          <Property Name="c421" Type="Double" />
+          <Property Name="c429" Type="Double" />
+          <Property Name="c499" Type="Double" />
+          <Property Name="r601" Type="Double" />
+          <Property Name="r605" Type="Double" />
+          <Property Name="r608" Type="Double" />
+          <Property Name="r609" Type="Double" />
+          <Property Name="r615" Type="Double" />
+          <Property Name="r620" Type="Double" />
+          <Property Name="r699" Type="Double" />
+        </EntityType>
+        <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="formulario_104" EntityType="Self.formulario_104" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="Entities">
+          <EntitySetMapping Name="formulario_104">
+            <EntityTypeMapping TypeName="Model.formulario_104">
+              <MappingFragment StoreEntitySet="formulario_104">
+                <ScalarProperty Name="id_Formulario" ColumnName="id_Formulario" />
+                <ScalarProperty Name="Ruc_Usuario" ColumnName="Ruc_Usuario" />
+                <ScalarProperty Name="periodo" ColumnName="periodo" />
+                <ScalarProperty Name="c401" ColumnName="c401" />
+                <ScalarProperty Name="c409" ColumnName="c409" />
+                <ScalarProperty Name="c411" ColumnName="c411" />
+                <ScalarProperty Name="c419" ColumnName="c419" />
+                <ScalarProperty Name="c421" ColumnName="c421" />
+                <ScalarProperty Name="c429" ColumnName="c429" />
+                <ScalarProperty Name="c499" ColumnName="c499" />
+                <ScalarProperty Name="r601" ColumnName="r601" />
+                <ScalarProperty Name="r605" ColumnName="r605" />
+                <ScalarProperty Name="r608" ColumnName="r608" />
+                <ScalarProperty Name="r609" ColumnName="r609" />
+                <ScalarProperty Name="r615" ColumnName="r615" />
+                <ScalarProperty Name="r620" ColumnName="r620" />
+                <ScalarProperty Name="r699" ColumnName="r699" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

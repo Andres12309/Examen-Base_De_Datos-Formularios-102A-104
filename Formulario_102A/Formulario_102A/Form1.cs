@@ -459,5 +459,14 @@ namespace Formulario_102A
                 Txt869.Text = Txt856.Text;
             }
         }
+
+        private void BtnAtras_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            FrmFormularios fr = new FrmFormularios();
+            fr.FormClosed += (s, args) => this.Close();
+            fr.Show();
+        }
     }
 }

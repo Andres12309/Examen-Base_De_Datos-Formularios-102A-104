@@ -1,0 +1,10 @@
+CREATE TABLE usuarios(
+NOMBRE char(30) NULL,
+APELLIDO char(30) NULL,
+CEDULA CHAR(30) NULL,
+CONTRASEÑA CHAR(30)NULL)
+
+insert into usuarios (NOMBRE, APELLIDO, CEDULA,CONTRASEÑA) values
+('Andres', 'Proaño', '1600731176','1868');
+insert into usuarios (NOMBRE, APELLIDO, CEDULA,CONTRASEÑA) values
+('Andreson', 'Cordova', '1710510742','2020');

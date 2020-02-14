@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="Entities">
+    <EntitySetMapping Name="formulario_104">
+      <EntityTypeMapping TypeName="Model.formulario_104">
+        <MappingFragment StoreEntitySet="formulario_104">
+          <ScalarProperty Name="id_Formulario" ColumnName="id_Formulario" />
+          <ScalarProperty Name="Ruc_Usuario" ColumnName="Ruc_Usuario" />
+          <ScalarProperty Name="periodo" ColumnName="periodo" />
+          <ScalarProperty Name="c401" ColumnName="c401" />
+          <ScalarProperty Name="c409" ColumnName="c409" />
+          <ScalarProperty Name="c411" ColumnName="c411" />
+          <ScalarProperty Name="c419" ColumnName="c419" />
+          <ScalarProperty Name="c421" ColumnName="c421" />
+          <ScalarProperty Name="c429" ColumnName="c429" />
+          <ScalarProperty Name="c499" ColumnName="c499" />
+          <ScalarProperty Name="r601" ColumnName="r601" />
+          <ScalarProperty Name="r605" ColumnName="r605" />
+          <ScalarProperty Name="r608" ColumnName="r608" />
+          <ScalarProperty Name="r609" ColumnName="r609" />
+          <ScalarProperty Name="r615" ColumnName="r615" />
+          <ScalarProperty Name="r620" ColumnName="r620" />
+          <ScalarProperty Name="r699" ColumnName="r699" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
